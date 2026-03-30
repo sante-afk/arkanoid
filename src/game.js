@@ -256,7 +256,7 @@ function drawToxicPaddle() {
 
 function loop() {
     requestAnimationFrame(loop);
-    drawToxicBackground();
+    drawToxicBackground(); 
     drawToxicWalls();
 
     paddle.x += paddle.dx;
