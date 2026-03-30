@@ -84,7 +84,3 @@ canvas {
         box-shadow: 0 0 50px rgba(0, 255, 0, 0.6);
     }
 }
-
-.game-container {
-    animation: pulse 2s ease-in-out infinite alternate;
-}

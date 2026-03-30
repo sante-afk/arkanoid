@@ -338,8 +338,8 @@ function loop() {
     holst.context.fillStyle = '#00ff00';
     holst.context.shadowBlur = 3;
     holst.context.shadowColor = '#00ff00';
-    holst.context.fillText(`BRICKS: ${bricks.length}`, 30, 30);
-    holst.context.fillText(holst.canvas.width - 70, 30);
+holst.context.fillText(`BRICKS: ${bricks.length}`, 30, 30);
+holst.context.fillText(``, holst.canvas.width - 70, 30);
     holst.context.shadowBlur = 0;
 }
 
