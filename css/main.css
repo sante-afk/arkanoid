@@ -1,10 +1,66 @@
 body {
-    display: flex;
     margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0a0f0a 0%, #0c1a0c 100%);
+    min-height: 100vh;
+    display: flex;
     justify-content: center;
-    background-color: rgb(145, 145, 145);
+    align-items: center;
+    font-family: 'Courier New', monospace;
 }
 
-body > canvas {
-    background-color: rgb(85, 115, 250);
+.game-container {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.3),
+                0 0 60px rgba(0, 255, 0, 0.2),
+                inset 0 0 20px rgba(0, 255, 0, 0.1);
+    background: #000000;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #00ff00;
+    font-size: 12px;
+    text-shadow: 0 0 5px #00ff00;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+.controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #00ff00;
+    font-size: 10px;
+    text-shadow: 0 0 3px #00ff00;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-family: monospace;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 30px rgba(0, 255, 0, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 50px rgba(0, 255, 0, 0.6);
+    }
+}
+
+.game-container {
+    animation: pulse 2s ease-in-out infinite alternate;
 }
